@@ -1,9 +1,5 @@
 pragma solidity ^0.4.25;
 
-//import 'zeppelin-solidity/contracts/ownership/Ownable.sol';
-//import '../node_modules/zeppelin-solidity/contracts/ownership/Ownable.sol';
-
-//contract AssetManagement is Ownable {
 contract AssetManagement {
 
     /*** Event ***/
@@ -24,7 +20,7 @@ contract AssetManagement {
         string  _status
     );
 
-    /*** Structs ***/
+    /*** Struct ***/
     struct Asset {
         string name;
         string timestamp;
@@ -32,7 +28,7 @@ contract AssetManagement {
         string status;
     }
 
-    /***  ***/
+    /*** Property ***/
     string[] types;
     Asset[] assets;
 
